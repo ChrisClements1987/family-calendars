@@ -11,29 +11,20 @@
       padding: 2rem;
       color: #111827;
     }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 0.5rem 0;
-    }
-    a {
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.75rem 0; }
+    .btn {
       display: inline-block;
       padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
       background: #2563eb;
       color: white;
       text-decoration: none;
       border-radius: 6px;
       transition: background 0.2s;
     }
-    a:hover {
-      background: #1e40af;
-    }
+    .btn:hover { background: #1e40af; }
     section {
       margin-top: 2rem;
       padding: 1rem;
@@ -41,45 +32,38 @@
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-    }
   </style>
 </head>
 <body>
   <h1>📅 Family Calendars</h1>
-  <p>Click to subscribe (auto-updating).</p>
+  <p>Click a button to subscribe:</p>
   <ul>
-    <li><a href="https://chrisclements1987.github.io/family-calendars/family.ics?v=20251001192929">Family Calendar</a></li>
-    <li><a href="https://chrisclements1987.github.io/family-calendars/chris.ics?v=20251001192929">Chris</a></li>
-    <li><a href="https://chrisclements1987.github.io/family-calendars/sarah.ics?v=20251001192929">Sarah</a></li>
-    <li><a href="https://chrisclements1987.github.io/family-calendars/seb_tilly.ics?v=20251001192929">Seb & Tilly</a></li>
+    <li>
+      Family:
+      <a class="btn" href="webcal://chrisclements1987.github.io/family-calendars/family.ics?v=20251001193019">Add (Webcal)</a>
+      <a class="btn" href="https://chrisclements1987.github.io/family-calendars/family.ics?v=20251001193019">Copy Link</a>
+    </li>
+    <li>
+      Chris:
+      <a class="btn" href="webcal://chrisclements1987.github.io/family-calendars/chris.ics?v=20251001193019">Add (Webcal)</a>
+      <a class="btn" href="https://chrisclements1987.github.io/family-calendars/chris.ics?v=20251001193019">Copy Link</a>
+    </li>
+    <li>
+      Sarah:
+      <a class="btn" href="webcal://chrisclements1987.github.io/family-calendars/sarah.ics?v=20251001193019">Add (Webcal)</a>
+      <a class="btn" href="https://chrisclements1987.github.io/family-calendars/sarah.ics?v=20251001193019">Copy Link</a>
+    </li>
+    <li>
+      Seb & Tilly:
+      <a class="btn" href="webcal://chrisclements1987.github.io/family-calendars/seb_tilly.ics?v=20251001193019">Add (Webcal)</a>
+      <a class="btn" href="https://chrisclements1987.github.io/family-calendars/seb_tilly.ics?v=20251001193019">Copy Link</a>
+    </li>
   </ul>
 
   <section>
-    <h2>📌 Instructions</h2>
-    <h3>Google Calendar</h3>
-    <ol>
-      <li>Right-click a link above and copy it.</li>
-      <li>Open <a href="https://calendar.google.com" target="_blank">Google Calendar</a>.</li>
-      <li>In the sidebar, click “Other calendars” → “From URL”.</li>
-      <li>Paste the link and press “Add”.</li>
-    </ol>
-
-    <h3>Outlook Desktop</h3>
-    <ol>
-      <li>Right-click a link above and copy it.</li>
-      <li>Open Outlook → File → Account Settings → Internet Calendars → New.</li>
-      <li>Paste the link and click “Add”.</li>
-    </ol>
-
-    <h3>iPhone Calendar</h3>
-    <ol>
-      <li>Long-press a link above and copy.</li>
-      <li>Go to Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar.</li>
-      <li>Paste the link.</li>
-    </ol>
+    <h2>📌 Notes</h2>
+    <p><b>Webcal:</b> Opens directly in Outlook, iOS, macOS Calendar.</p>
+    <p><b>Copy Link:</b> Use for Google Calendar → "Other calendars" → "From URL".</p>
   </section>
 </body>
 </html>
